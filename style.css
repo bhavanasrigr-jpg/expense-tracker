@@ -1,0 +1,66 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #0f172a; /* dark navy/black */
+  color: #e2e8f0;
+}
+
+/* Containers */
+.container, .login-container {
+  width: 360px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* Inputs */
+input, select {
+  width: 90%;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #0f172a;
+  color: white;
+}
+
+/* Buttons */
+button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  cursor: pointer;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.card {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+/* List */
+li {
+  background: #0f172a;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
