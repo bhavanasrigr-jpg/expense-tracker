@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+body {
+  margin:0;
+  background:#0f172a;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:Arial;
+}
+.card {
+  background:#1e293b;
+  padding:30px;
+  border-radius:10px;
+  width:300px;
+  text-align:center;
+}
+input,button {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:none;
+  border-radius:5px;
+}
+button {
+  background:#38bdf8;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Welcome 👋</h2>
+  <input id="user" placeholder="Enter name">
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+  let name=document.getElementById("user").value;
+  localStorage.setItem("user",name);
+  window.location.href="index.html";
+}
+</script>
+
+</body>
+</html>
