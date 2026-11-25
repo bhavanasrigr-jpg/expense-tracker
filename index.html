@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track My Cash</title>
+
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1c1c1c;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
+
+    input, button {
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      background: cyan;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>💰 Track My Cash</h1>
+
+<!-- APP -->
+<div id="app">
+
+  <button onclick="openPage('reportsPage')">📊 Reports</button>
+
+  <!-- SUMMARY -->
+  <div class="card">
+    <h3>Total: <span id="total">₹0</span></h3>
+    <h3>Transactions: <span id="count">0</span></h3>
+  </div>
+
+  <!-- ADD EXPENSE -->
+  <div class="card">
+    <h2>➕ Add Expense</h2>
+    <input type="text" id="desc" placeholder="Description">
+    <input type="number" id="amount" placeholder="Amount">
+    <select id=""category">
+    <option>food</option>
+    <option>transport</option>
+    <option>entertainment</option>
+    <option>other</option>
+    <button onclick="addExpense()">Add</button>
+  </div>
+
+  <!-- EXPENSE LIST -->
+  <div class="card">
+    <h2>📋 Expenses</h2>
+    <ul id="expenseList"></ul>
+  </div>
+
+</div>
+
+<!-- REPORTS PAGE -->
+<div id="reportsPage" style="display:none;">
+  <h2>📊 Reports Page</h2>
+  <p>Total Expenses: <span id="reportTotal">0</span></p>
+  <p>Total Transactions: <span id="reportCount">0</span></p>
+  <button onclick="goBack()">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
